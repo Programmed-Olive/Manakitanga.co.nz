@@ -1,0 +1,149 @@
+body{
+  gap: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color:#e8e2ff;
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+
+  height: 80px;
+  width: 400px;
+
+  color: #1e134d;
+  background: #ff93dd;
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.boxtitle h2 {
+  margin: 0;
+ 
+}
+.boxtitle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px #ffffffaf;
+  text-shadow: 0 2px rgba(255, 255, 255, 0.522);
+  background-color: #ffa7e3;
+}
+.box-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; /* or block if needed */
+}
+
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 180px;
+}
+
+
+
+h1 {
+  color: #2b1392;
+  font-size: 50px;
+}
+
+h3 {
+  color: #2b1392;
+  font-size: 40px;
+}
+
+p {
+  color: #000000;
+  font-size: 30px;
+  font-style: bold;
+}
+.contact {
+ display: flex;
+ flex-direction: column;
+ padding-left: 200px;
+ padding-top: 100px;
+ justify-content: center;
+ align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menutop{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 30px;
+}
+.menu-links{
+    display: flex;
+    gap: 40px;
+    margin-left: auto; 
+    margin-right: 40px; 
+}
+.menu-links a{
+    text-decoration: none;
+    color:#1e134d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding:0;
+    min-height:auto;
+}
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background:rgba(255, 255, 255, 0.46);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+::placeholder{
+  color: #cac7ff;
+}
+
+.search-bar button{
+  width: 25px;
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #8d77d3;
+  cursor: pointer;
+}
+
+
