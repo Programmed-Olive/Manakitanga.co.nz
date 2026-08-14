@@ -7,10 +7,10 @@
   <link rel="icon" type="image/x-icon" href="Images/TabLogo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-a">
   <div class="menu">
     <div class="menutop">
-      <img src="Images/Logo.svg" style="width: 150px ; height: auto;">
+      <img src="Images/Logo.svg" class="logo">
       <nav class="menu-links">
         <a href="Index.html">Home</a>
         <a href="Help.html">Help</a>
@@ -18,9 +18,11 @@
         <a href="Contact.html">Contact</a>
       </nav>
         <div class="container">
-          <form action="" class="search-bar">
-            <input type="text" placeholder="search anything" name="q">
-            <button type="submit"><img src="Images/Search.svg"></button>
+          <form action="/search.html" method="GET" class="search-bar">
+                <input id="search-input" name="query" />
+                <button type="submit" id="search-button">
+                    <img src="Images/Search.svg">
+                </button>  
           </form>
         </div>
       </div>
