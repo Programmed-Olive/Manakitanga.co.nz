@@ -7,38 +7,39 @@
   <link rel="icon" type="image/x-icon" href="Images/TabLogo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-b">
-  <div class="menu">
-    <div class="menutop">
-       <img src="Images/Logo.svg" class="logo">
-      <nav class="menu-links">
-        <a href="Index.html">Home</a>
-        <a href="Help.html">Help</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html">Contact</a>
+<body class="page-contrast">
+  <div class="page-shell">
+    <div class="site-header">
+      <img src="Images/Logo.svg" class="brand-logo">
+      <nav class="main-nav">
+        <a href="Index.html" class="nav-link">Home</a>
+        <a href="Help.html" class="nav-link">Help</a>
+        <a href="About.html" class="nav-link">About Us</a>
+        <a href="Contact.html" class="nav-link">Contact</a>
       </nav>
-        <div class="container">
-           <form action="/search.html" method="GET" class="search-bar">
-                <input id="search-input" name="query" />
-                <button type="submit" id="search-button">
-                    <img src="Images/Search.svg">
-                </button>  
-          </form>
-        </div>  
+      <div class="search-wrap">
+        <form action="/search.html" method="GET" class="search-form">
+          <input id="search-input" name="query" class="search-field" />
+          <button type="submit" id="search-button" class="search-submit">
+            <img src="Images/Search.svg" alt="Search">
+          </button>
+        </form>
       </div>
-      <div class="image">
-        <div class="about">
-          <h3 style="font-size: 80px; color: white;">About Us:</h3>
-          <p style="font-size: 35px; padding-top: 20px; color: white; text-align: left; ">
+    </div>
+    <div class="content-split">
+      <div class="info-panel">
+        <h3 style="font-size: 80px; color: white;">About Us:</h3>
+        <p style="font-size: 35px; padding-top: 20px; color: white; text-align: left;">
           We are a non-profit organization in New<br>
           Zealand deadicated to stopping Bullying.<br>
-          We  provide free resources to help spread<br>
+          We provide free resources to help spread<br>
           awareness on bullying and offer secure<br>
           phone calls for you to have someone to talk<br>
           too.
-        </div>  
-        <img src="Images/about.svg" style="width: 350px ; height: auto; margin-top:100px; margin-left: 100px;">
+        </p>
       </div>
+      <img src="Images/about.svg" style="width: 350px; height: auto; margin-top:100px; margin-left: 100px;">
+    </div>
   </div>
 </body>
 </html>
