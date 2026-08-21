@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Search</title>
   <link rel="icon" type="image/x-icon" href="Images/TabLogo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="page-home">
   <div class="page-shell">
+
     <div class="site-header">
       <img src="Images/Logo.svg" class="brand-logo">
+
       <nav class="main-nav">
         <a href="Index.html" class="nav-link">Home</a>
         <a href="Help.html" class="nav-link">Help</a>
         <a href="About.html" class="nav-link">About Us</a>
         <a href="Contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="search-wrap">
-        <form action="/search.html" method="GET" class="search-form">
-          <input id="search-input" name="query" class="search-field" />
+        <form action="search.html" method="GET" class="search-form">
+          <input id="search-input" name="query" class="search-field">
           <button type="submit" id="search-button" class="search-submit">
             <img src="Images/Search.svg" alt="Search">
           </button>
@@ -27,24 +31,12 @@
       </div>
     </div>
 
-    <h1 id="search-title" style="margin-left: 40px; padding-bottom: 10px;">Results for:</h1>
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      const query = params.get("query");
+    <h1 id="search-title">Search</h1>
 
-      document.getElementById("search-title").textContent =
-        query ? "Results for: " + query : "Search";
-    </script>
+    <div class="result-list"></div>
 
-    <div class="result-list">
-      <a href="#" class="result-item">5 Free Anti-Bullying PDFS</a>
-      <a href="#" class="result-item">10 Tips to Reduce Bullying</a>
-      <a href="#" class="result-item">How to Deal with Bullying</a>
-      <a href="#" class="result-item">Parent's Guide to Bullying</a>
-      <a href="#" class="result-item">How to Talk to Your Child About Bullying</a>
-    </div>
-
-    <script src="search.js"></script>
   </div>
+
+  <script src="search.js"></script>
 </body>
 </html>
